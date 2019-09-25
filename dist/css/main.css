@@ -71,7 +71,7 @@
   color: #111;
   border: #ccc 1px solid; }
 
-.btn {
+.btn, .btn-dark, .btn-light {
   display: inline-block;
   background: #f4f4f4;
   color: #000;
@@ -80,16 +80,35 @@
   cursor: pointer;
   font-size: 1rem;
   margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  margin-bottom: .25rem;
   outline: none;
-  text-decoration: none; }
+  text-decoration: none;
+  text-align: center; }
   .btn-primary {
     background-color: #3683cc;
     color: #111; }
     .btn-primary:hover {
-      background: #4a90d1; }
-  .btn:hover {
+      background: #4a90d1;
+      transition: all 0.5s ease-out; }
+  .btn:hover, .btn-dark:hover, .btn-light:hover {
     background: #626d78;
-    color: #fff; }
+    color: #fff;
+    transition: all 0.5s ease-out; }
+
+.btn-dark {
+  display: block; }
+  .btn-dark:hover {
+    opacity: 0.5;
+    border-color: #fff;
+    transition: all 0.5s ease-out; }
+
+.btn-light {
+  display: block; }
+  .btn-light:hover {
+    opacity: 0.5;
+    border-color: #fff;
+    transition: all 0.5s ease-out; }
 
 .section-title-right {
   font-size: 2em;
@@ -112,9 +131,29 @@
   display: table;
   clear: both; }
 
+.section-column-1 {
+  float: left;
+  width: 100%;
+  padding: 0 .5rem; }
+  .section-column-1 input {
+    width: 100%;
+    padding: .8rem;
+    margin-bottom: .5rem; }
+
+.section-column-2 {
+  float: left;
+  width: 50%;
+  padding: 0 .5rem; }
+  .section-column-2 input {
+    width: 100%;
+    padding: .8rem;
+    margin-bottom: .5rem; }
+
 .section-column-3 {
   float: left;
   width: 33.33%; }
+  .section-column-3 a img {
+    width: 100%; }
 
 .section-column-4 {
   float: left;
@@ -163,7 +202,7 @@ header {
   z-index: 2;
   width: 100%; }
 
-section {
+#landing {
   height: 110vh; }
 
 .text-secondary {
@@ -198,3 +237,35 @@ section {
 
 .section-work-content {
   font-size: .9rem; }
+
+.projects {
+  margin-bottom: 1rem;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr); }
+  .projects .project-item {
+    width: 100%;
+    height: 100%; }
+  .projects .project-item-img {
+    text-align: center;
+    width: 100%;
+    height: 75%;
+    padding: 5px; }
+  .projects .project-item-btns {
+    margin: auto;
+    width: 75%;
+    height: 25%; }
+  .projects img {
+    width: 75%;
+    height: 100%;
+    border: 1px black solid; }
+    .projects img:hover {
+      opacity: 0.5;
+      border-color: #fff;
+      transition: all 0.5s ease-out; }
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  color: #111;
+  height: 3rem; }
