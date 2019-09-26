@@ -178,7 +178,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(231, 222, 222, 0.527); }
+  background: rgba(222, 227, 231, 0.527); }
 
 .border-grey {
   margin: auto;
@@ -265,6 +265,9 @@ header {
       opacity: 0.5;
       border-color: #fff;
       transition: all 0.5s ease-out; }
+
+.contact-container {
+  line-height: 1.5; }
 
 #main-footer {
   text-align: center;
