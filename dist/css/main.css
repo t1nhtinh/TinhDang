@@ -178,7 +178,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(222, 227, 231, 0.527); }
+  background: rgba(222, 227, 231, 0.85); }
 
 .border-grey {
   margin: auto;
@@ -204,6 +204,10 @@ header {
   z-index: 2;
   width: 100%; }
 
+.portrait {
+  height: 150px;
+  width: 150px; }
+
 #landing {
   height: 110vh; }
 
@@ -220,7 +224,7 @@ header {
     top: 50%;
     left: 50%;
     height: auto;
-    width: auto;
+    width: 90%;
     overflow: hidden;
     -ms-transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);

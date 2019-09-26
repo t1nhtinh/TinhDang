@@ -24,10 +24,15 @@ header {
     width: 100%;
 }
 
+.portrait
+{
+    height: 150px;
+    width: 150px;
+}
+
 #landing {
     height: 110vh;
 }
-
 
 .text-secondary {
     color: $secondary-color;
@@ -47,7 +52,7 @@ header {
         top:50%;
         left: 50%;
         height: auto;
-        width: auto;    
+        width: 90%;    
         overflow: hidden; //hide scroll bar
         -ms-transform: translate(-50%, -50%);
         -webkit-transform: translate(-50%, -50%);
