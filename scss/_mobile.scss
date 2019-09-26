@@ -1,0 +1,41 @@
+//Widescreens
+@include mediaXl {
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+// Desktops and Laptops
+@include mediaLg
+{
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+//Tablets and Small Laptops
+@include mediaMd {
+  .section-column-3
+  {
+    float: left;
+    width: 50%;
+  }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+//Smartphones
+@include mediaSm {
+  .section-column-3
+  {
+    float: left;
+    width: 100%;
+  }
+
+  .projects {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+}

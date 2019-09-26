@@ -2,6 +2,7 @@ $primary-color:  rgb(54, 131, 204) ;
 $secondary-color: #fff;
 //$primary-color: #17a2b8;
 $dark-color: #343a40;
+$white-color: #fff;
 $light-color: #f4f4f4;
 $danger-color: #dc3545;
 $success-color: #28a745;
@@ -28,4 +29,33 @@ $max-width: 1100px;
 {
     background-color: $color;
     color: set-text-color($color);
+}
+
+//Media Query Mixins
+@mixin mediaSm{
+    @media screen and (max-width:500px)
+    {
+        @content;
+    }
+}
+
+@mixin mediaMd{
+    @media screen and (max-width:768px)
+    {
+        @content;
+    }
+}
+
+@mixin mediaLg{
+    @media screen and (mid-width:769px) and (max-width: 1170px)
+    {
+        @content;
+    }
+}
+
+@mixin mediaXl{
+    @media screen and (min-width:1171px)
+    {
+        @content;
+    }
 }

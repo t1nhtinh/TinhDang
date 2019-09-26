@@ -79,15 +79,17 @@
   border: none;
   cursor: pointer;
   font-size: 1rem;
-  margin-right: 0.5rem;
-  margin-left: 0.5rem;
-  margin-bottom: .25rem;
   outline: none;
   text-decoration: none;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: .25rem;
+  text-overflow: ellipsis; }
   .btn-primary {
     background-color: #3683cc;
-    color: #111; }
+    color: #111;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    margin-bottom: .25rem; }
     .btn-primary:hover {
       background: #4a90d1;
       transition: all 0.5s ease-out; }
@@ -176,7 +178,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.11); }
+  background: rgba(231, 222, 222, 0.527); }
 
 .border-grey {
   margin: auto;
@@ -245,18 +247,18 @@ header {
   grid-template-columns: repeat(2, 1fr); }
   .projects .project-item {
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    overflow: auto; }
   .projects .project-item-img {
-    text-align: center;
-    width: 100%;
-    height: 75%;
-    padding: 5px; }
-  .projects .project-item-btns {
     margin: auto;
     width: 75%;
-    height: 25%; }
+    height: 50%;
+    padding-bottom: .5rem; }
+  .projects .project-item-btns {
+    margin: auto;
+    width: 75%; }
   .projects img {
-    width: 75%;
+    width: 100%;
     height: 100%;
     border: 1px black solid; }
     .projects img:hover {
@@ -269,3 +271,25 @@ header {
   padding: 1rem;
   color: #111;
   height: 3rem; }
+
+@media screen and (min-width: 1171px) {
+  .projects {
+    grid-template-columns: repeat(4, 1fr); } }
+
+@media screen and (mid-width: 769px) and (max-width: 1170px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr); } }
+
+@media screen and (max-width: 768px) {
+  .section-column-3 {
+    float: left;
+    width: 50%; }
+  .projects {
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media screen and (max-width: 500px) {
+  .section-column-3 {
+    float: left;
+    width: 100%; }
+  .projects {
+    grid-template-columns: repeat(1, 1fr); } }
