@@ -229,6 +229,8 @@ header {
     -ms-transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
+    #landing-inner img {
+      border-radius: 50%; }
 
 .section-table-label {
   text-align: center;
